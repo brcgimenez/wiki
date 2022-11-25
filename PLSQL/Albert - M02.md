@@ -59,7 +59,7 @@
 
 * Declarações -> Para utilizar variáveis e constantes é preciso declara-las previamente. Variáveis declaradas em um bloco externo são acessíveis em qualquer parte do programa, já as declaradas no sub-bloco, são acessíveis somente dentro desse, ou seja, não são acessíveis externamente por outros sub-blocos.
 
-	```
+	```sql
 	<<externo>>
 	DECLARE
 		-- variavel a
@@ -103,7 +103,7 @@
 	* Comando %TYPE -> possibilita associar ao tipo de uma variável ao tipo de uma coluna de uma tabela, dessa maneira, a variável assumirá automaticamente o tipo de dado da coluna.
 	* Comando %ROWTYPE -> cria uma estrutura de registro idêntica á uma estrutura de uma tabela.
 	
-	```
+	```sql
 	<<externo>>
 	DECLARE
 		a	NUMBER := 1;
@@ -125,7 +125,7 @@
 		* NO_DATA_FOUND -> se não for retornada nenhuma linha;
 		* TOO_MANY_ROWS -> se mais de uma linha for retornada.
 	
-	```
+	```sql
 	DECLARE
 		a	INTEGER := 10;
 		b	INTEGER := 20;
@@ -141,7 +141,7 @@
 	/
 	```
 	
-	```
+	```sql
 	DECLARE
 		a	INTEGER := 10;
 		b	INTEGER := 20;
@@ -163,7 +163,7 @@
 		* IF-THEN / IF-THEN-ELSE / IF-THEN-ELSIF-THEN;
 		* CASE -> pode ser usado com ou sem seletor
 	
-	```
+	```sql
 	DECLARE
 		a	INTEGER := 10;
 		b	INTEGER := 20;
@@ -222,7 +222,7 @@
 		* WHILE-LOOP
 		* FOR-LOOP
 
-	```
+	```sql
 	DECLARE
 		i	INTEGER;
 		a	INTEGER := 10;
@@ -293,7 +293,7 @@
 	* A cláusula END ou END LOOP pode fazer referência ao label
 	* Seu uso é vantajoso quando existem vários blocos aninhados
 	
-	```
+	```sql
 	DECLARE
 		i	INTEGER;
 		a	INTEGER := 10;
@@ -356,10 +356,10 @@
 				* Abrir o cursor para alocar a memória (OPEN);
 				* Buscar o cursor para recuperar os dados (FETCH);
 				* Fechar o cursor para liberar a memória alocada (CLOSE).
+	
+	![image](https://user-images.githubusercontent.com/114239313/204035549-657d15b3-d027-4f03-b619-ac5710dfd097.png)
 				
-				<<COLAR A IMAGEM AQUI>>
-				
-	```
+	```sql
 	/*
 	DECLARE
 	BEGIN
@@ -406,7 +406,7 @@
 			* Exceção PL/SQL -> é o objeto de programação PL/SQL que nos permite evitar a interrupção abrupta do programa caso este seja acometido por um erro de execução;
 			* Tratamento da exceção -> indica qual ação ou quais ações deverão ser tomadas quando o programa for acometido por um erro de execução.
 			
-	```
+	```sql
 	DECLARE
 		v_codigo_informado	INTEGER := 500;
 		v_codigo	treinamento_venda.codigo%type;
